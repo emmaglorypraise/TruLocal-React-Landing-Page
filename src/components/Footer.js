@@ -3,7 +3,7 @@ import logo from "../assets/logo2.svg";
 export default function Footer() {
   return (
     <>
-      <div className="bg-[#E98100] ">
+      <div className="bg-[#E98100] py-[60px] ">
         <div className="max-w-[986px] mx-auto">
         <div className="flex flex-col text-center justify-center pt-[20px] lg:pt-[2px]">
           <img src={logo} alt="logo" className="w-1/3  " />
