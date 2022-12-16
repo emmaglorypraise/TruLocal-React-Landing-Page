@@ -29,9 +29,9 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row lg:ml-[30px] px-6 py-[55px] text-left">
+      <div className="flex flex-col md:flex-row lg:ml-[30px] px-6 py-[55px] text-left">
         <p className="font-Inter font-medium text-[20px]  leading-[36px] text-[#E98100] mr-8 pb-4 lg:pb-0 lg:pt-4">Everything is easy!</p>
-        <div className="flex flex-col lg:flex-row justify-center">
+        <div className="flex flex-col md:flex-row justify-center">
           <div className="flex place-items-center py-2"><span className="font-Bia-Jamjuree font-medium text-[20px] text-white bg-[#E98100] leading-[22px] rounded-full px-5 py-4  mx-0 lg:mx-4">1</span><p className="pl-2 font-Inter font-normal text-[#222222] text-[16px] leading-[29px] pr-4">Post a Task</p> </div>
           <div className="flex place-items-center py-2"><span className="font-Bia-Jamjuree font-medium text-[20px] text-white bg-[#E98100] leading-[22px] rounded-full px-5 py-4 mx-0 lg:mx-4">2</span><p className="pl-2 font-Inter font-normal text-[#222222] text-[16px] leading-[29px] pr-4">Set your budget or not</p> </div>
           <div className="flex place-items-center py-2"><span className="font-Bia-Jamjuree font-medium text-[20px] text-white bg-[#E98100] leading-[22px] rounded-full px-5 py-4  mx-0 lg:mx-4">3  </span><p className="pl-2 font-Inter font-normal text-[#222222] text-[16px] leading-[29px] pr-4">Receive quotes & pick the best provider</p> </div>

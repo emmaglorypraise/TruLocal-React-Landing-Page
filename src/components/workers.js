@@ -20,7 +20,7 @@ export default function Workers() {
   return (
     <>
       <div className="bg-[#EEE4D7]">
-        <h1 className="lg:pt-[120px] pt-[60px] pb-10 text-[#222222] text-center font-Bai-Jamjuree font-semibold text-[36px] leading-[40px] tracking-[-0.02em]">See what  <span className="text-[#E98100]">people </span>are getting done</h1>
+        <h1 className="lg:pt-[120px] pt-[60px] md:pb-10 pb-5 text-[#222222] text-center font-Bai-Jamjuree font-semibold text-[36px] leading-[40px] tracking-[-0.02em]">See what  <span className="text-[#E98100]">people </span>are getting done</h1>
         <Slider1 />
         <div className="flex flex-col md:flex-row mt-[20px] lg:mt-[50px]">
           <div className="max-w-[570px] lg:ml-[30px] mx-auto px-6 text-left text-[#222222]">
@@ -63,10 +63,10 @@ export default function Workers() {
 
         <div>
           <h1 className="lg:pt-[120px] pt-[60px] pb-10 text-[#222222] text-center font-Bai-Jamjuree font-semibold text-[48px] leading-[53px] tracking-[-0.02em]">Our Customers love what we do.</h1>
-          <div className="grid grid-col-3 grid-flow-row gap-4 text-left max-w-[1200px] w-full mx-auto h-full ">
+          <div className="md:grid md:grid-col-3  md:grid-flow-row gap-4 flex flex-wrap text-left max-w-[1200px] w-full mx-auto h-full ">
             <div className="bg-white rounded-[24px] max-w-[375px] w-full p-5 mr-2 col-span-2 row-start-1 row-end-2 ">
               <div>
-                <div className="flex pb-[60px] lg:pb-0">
+                <div className="flex pb-[20px] lg:pb-0">
                   <img className="pr-1 lg:pr-4 pt-4" src={person1} alt="person" />
                   <p className="font-Bai-Jamjuree font-medium text-[20px] pt-6 leading-[22px] text-[#000000]">Eze Chinedu</p>
                 </div>
@@ -77,7 +77,7 @@ export default function Workers() {
             </div>
             <div className="bg-white rounded-[24px] max-w-[375px] w-full p-5 mr-2 col-span-2 row-start-1 row-end-4 ...">
             <div>
-                <div className="flex pb-[60px] lg:pb-0">
+                <div className="flex pb-[20px] lg:pb-0">
                   <img className="pr-1 lg:pr-4 pt-4" src={person1} alt="person" />
                   <p className="font-Bai-Jamjuree font-medium text-[20px] pt-6 leading-[22px] text-[#000000]">Jibike Alarape</p>
                 </div>
@@ -88,7 +88,7 @@ export default function Workers() {
             </div>
             <div className="bg-white rounded-[24px] max-w-[375px] w-full p-5 mr-2 col-span-2 row-start-1  row-end-1 ...">
             <div>
-                <div className="flex pb-[60px] lg:pb-0">
+                <div className="flex pb-[20px] lg:pb-0">
                   <img className="pr-1 lg:pr-4 pt-4" src={person1} alt="person" />
                   <p className="font-Bai-Jamjuree font-medium text-[20px] pt-6 leading-[22px] text-[#000000]">Eze Chinedu</p>
                 </div>
@@ -100,7 +100,7 @@ export default function Workers() {
 
             <div className="bg-white rounded-[24px] max-w-[375px] w-full p-5 mr-2 col-span-2 row-start-2 row-span-4 ...">
             <div>
-                <div className="flex pb-[60px] lg:pb-0">
+                <div className="flex pb-[20px] lg:pb-0">
                   <img className="pr-1 lg:pr-4 pt-4" src={person1} alt="person" />
                   <p className="font-Bai-Jamjuree font-medium text-[20px] pt-6 leading-[22px] text-[#000000]">Damilare Usman</p>
                 </div>
@@ -111,7 +111,7 @@ export default function Workers() {
             </div>
             <div className="bg-white rounded-[24px] max-w-[375px] w-full p-5 mr-2 col-span-2 row-start-4 row-span-2 ...">
             <div>
-                <div className="flex pb-[60px] lg:pb-0">
+                <div className="flex pb-[20px] lg:pb-0">
                   <img className="pr-1 lg:pr-4 pt-4" src={person1} alt="person" />
                   <p className="font-Bai-Jamjuree font-medium text-[20px] pt-6 leading-[22px] text-[#000000]">Nneka Chukwu</p>
                 </div>
@@ -122,7 +122,7 @@ export default function Workers() {
             </div>
             <div className="bg-white rounded-[24px] max-w-[375px] w-full p-5 mr-2 col-span-2 row-start-3 row-span-3 ...">
             <div>
-                <div className="flex pb-[60px] lg:pb-0">
+                <div className="flex pb-[20px] lg:pb-0">
                   <img className="pr-1 lg:pr-4 pt-4" src={person1} alt="person" />
                   <p className="font-Bai-Jamjuree font-medium text-[20px] pt-6 leading-[22px] text-[#000000]">Adebanji Bolaji</p>
                 </div>
@@ -134,7 +134,7 @@ export default function Workers() {
 
             <div className="bg-white rounded-[24px] max-w-[375px] w-full p-5 mr-2 col-span-2 row-start-6 row-span-1 ...">
             <div>
-                <div className="flex pb-[60px] lg:pb-0">
+                <div className="flex pb-[20px] lg:pb-0">
                   <img className="pr-1 lg:pr-4 pt-4" src={person2} alt="person" />
                   <p className="font-Bai-Jamjuree font-medium text-[20px] pt-6 leading-[22px] text-[#000000]">Adegboyoga Precious</p>
                 </div>
@@ -143,9 +143,9 @@ export default function Workers() {
                 <p className="font-Mulish font-normal text-[16px] pt-6 leading-[29px] text-[#222222]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui convallis fusce nulla tincidunt sem iaculis. Amet velit etiam nisi.</p>
               </div>
             </div>
-            <div className="bg-white rounded-[24px] max-w-[375px] w-full p-5 mr-2 col-span-2 row-start-6 row-span-1 invisible ...">
+            <div className="bg-white rounded-[24px] max-w-[375px] w-full p-5 mr-2 col-span-2 row-start-6 row-span-1 md:invisible ...">
             <div>
-                <div className="flex pb-[60px] lg:pb-0">
+                <div className="flex pb-[20px] lg:pb-0">
                   <img className="pr-1 lg:pr-4 pt-4" src={person3} alt="person" />
                   <p className="font-Bai-Jamjuree font-medium text-[20px] pt-6 leading-[22px] text-[#000000]">Nneka Chukwu</p>
                 </div>
@@ -157,7 +157,7 @@ export default function Workers() {
 
             <div className="bg-white rounded-[24px] max-w-[375px] w-full p-5 mr-2 col-span-2 row-start-6 row-span-1 ...">
             <div>
-                <div className="flex pb-[60px] lg:pb-0">
+                <div className="flex pb-[20px] lg:pb-0">
                   <img className="pr-1 lg:pr-4 pt-4" src={person4} alt="person" />
                   <p className="font-Bai-Jamjuree font-medium text-[20px] pt-6 leading-[22px] text-[#000000]">VIctor Adebisi</p>
                 </div>
