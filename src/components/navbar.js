@@ -9,20 +9,25 @@ const navigation = [
   { name: 'How it Works', href: '#', current: false },
 ]
 
+const navigation2 = [
+  { name: 'Log in', href: '#', current: false },
+  { name: 'Sign Up', href: '#', current: false },
+]
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-gray-800">
+    <Disclosure as="nav" className="bg-[#EEEEEE]">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 pb-6 pt-2">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-[#4A5168] hover:bg-white hover:text-[#E98100] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -46,33 +51,52 @@ export default function Navbar() {
                 </div>
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                      <a
-                        // key={item.name}
-                        href="#"
-                        className='bg-gray-900 text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium'
-                    
-                      >
-                        Post a Job
-                      </a>
+                    <a
+                      // key={item.name}
+                      href="#"
+                      className='bg-white border text-[16px] leading-[24px] border-[#E98100] text-[#E98100] hover:bg-[#E98100] hover:text-white px-2 py-2 w-full rounded-md text-sm font-medium'
+
+                    >
+                      Post a Job
+                    </a>
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <div className="hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
-                    {navigation.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'px-3 py-2 rounded-md text-sm font-medium'
-                        )}
-                        aria-current={item.current ? 'page' : undefined}
-                      >
-                        {item.name}
-                      </a>
-                    ))}
+              <div className="absolute inset-y-0 right-0 flex  pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <div className="hidden sm:ml-6 sm:block ">
+                  <div className='flex'>
+                    <div className="flex space-x-2 pr-1">
+                      {navigation.map((item) => (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className={classNames(
+                            item.current ? 'bg-gray-900 text-white' : 'text-[#4A5168]  hover:text-[#E98100]',
+                            'px-3 py-2 rounded-md text-sm font-medium'
+                          )}
+                          aria-current={item.current ? 'page' : undefined}
+                        >
+                          {item.name}
+                        </a>
+                      ))}
+                    </div>
+                    <div className="flex space-x-2 border border-l-[#E98100] border-r-0 border-y-0 pl-1  ">
+                      {navigation2.map((item) => (
+                        <a
+                          key={item.name}
+                          href={item.href}
+                          className={classNames(
+                            item.current ? 'bg-gray-900 text-white' : 'text-[#E98100]  hover:text-[#E98100]',
+                            'px-2 py-2 rounded-md text-sm font-medium'
+                          )}
+                          aria-current={item.current ? 'page' : undefined}
+                        >
+                          {item.name}
+                        </a>
+                      ))}
+                    </div>
+
+                    <button className=" text-center font-Poppins font-medium text-[18px] leading-[27px] text-white bg-[#E98100] py-2 w-1/3 px-2 rounded-[20px]">Provide a Service</button>
                   </div>
                 </div>
                 {/* <button
@@ -150,7 +174,7 @@ export default function Navbar() {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                    item.current ? 'bg-gray-900 text-white' : 'text-[#4A5168] hover:text-[#E98100]',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
@@ -159,6 +183,24 @@ export default function Navbar() {
                 </Disclosure.Button>
               ))}
             </div>
+            <div className="space-y-1 px-2 pt-2 pb-3">
+              {navigation2.map((item) => (
+                <Disclosure.Button
+                  key={item.name}
+                  as="a"
+                  href={item.href}
+                  className={classNames(
+                    item.current ? 'bg-gray-900 text-white' : 'text-[#E98100] hover:text-[#E98100]',
+                    'block px-3 py-2 rounded-md text-base font-medium'
+                  )}
+                  aria-current={item.current ? 'page' : undefined}
+                >
+                  {item.name}
+                </Disclosure.Button>
+              ))}
+            </div>
+
+            <button className=" text-center font-Poppins font-medium text-[18px] leading-[27px] text-white bg-[#E98100] py-2 px-7  ml-5 rounded-[20px]">Provide a Service</button>
           </Disclosure.Panel>
         </>
       )}
