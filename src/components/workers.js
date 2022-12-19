@@ -16,10 +16,11 @@ import person3 from "../assets/images/person1.svg";
 import person4 from "../assets/images/person2.svg";
 import Slider1 from "./slider1"
 
+
 export default function Workers() {
   return (
     <>
-      <div className="bg-[#EEE4D7]">
+      <div className="bg-[#EEE4D7]" >
         <h1 className="lg:pt-[120px] pt-[60px] md:pb-10 pb-5 text-[#222222] text-center font-Bai-Jamjuree font-semibold text-[36px] leading-[40px] tracking-[-0.02em]">See what  <span className="text-[#E98100]">people </span>are getting done</h1>
         <Slider1 />
         <div className="flex flex-col md:flex-row mt-[20px] lg:mt-[50px]">

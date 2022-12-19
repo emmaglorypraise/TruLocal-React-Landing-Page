@@ -1,40 +1,67 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
+import React, { Component } from "react";
+import Slider from "react-slick";
 
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
+import card1 from "../assets/images/sliderp2.svg";
 
-import "./styles.css";
+export default class Slider2 extends Component {
+  render() {
+    const settings = {
+      centerMode: true,
+      infinite: true,
+      centerPadding: "100px",
+      slidesToShow: 1,
+      speed: 500,
+      // responsive: [
+      //   {
+      //     breakpoint: 768,
+      //       arrows: false,
+      //       centerMode: true,
+      //       centerPadding: '40px',
+      //       slidesToShow: 1
+        
+      //   },
+      //   {
+      //     breakpoint: 480,
+      //       arrows: false,
+      //       centerMode: true,
+      //       centerPadding: '40px',
+      //       slidesToShow: 1
+          
+      //   }
+      // ]
+    };
+    return (
+      <div>
+        <Slider {...settings} className="my-[30px] p-5">
+          <div>
+          <div className="w-full rounded-[35px] lg:h-[475px] flex py-3 gap-4 items-end lg:w-[494px] h-full bg-no-repeat bg-cover " style={{ backgroundImage: `url(${card1})` }}>
+            <div className=" px-5 text-left mb-6">
+              <p className="text-[#ffffff] font-Bai-Jamjuree font-semibold text-[40px] leading-[44px]">IT Services</p>
+              <p className="flex font-Mulish font-medium text-[20px] leading-[28px] tracking-[-0.01em] text-[#ffffff] mt-2">For software, web development, networking, programming, etc.</p>
 
-// import required modules
-import { FreeMode, Pagination } from "swiper";
+            </div>
+          </div>
+          </div>
+          <div>
+          <div className="w-full rounded-[35px] lg:h-[475px] flex py-3 items-end lg:w-[494px] h-full bg-no-repeat bg-cover " style={{ backgroundImage: `url(${card1})` }}>
+            <div className=" px-5 text-left mb-6">
+              <p className="text-[#ffffff] font-Bai-Jamjuree font-semibold text-[40px] leading-[44px]">IT Services</p>
+              <p className="flex font-Mulish font-medium text-[20px] leading-[28px] tracking-[-0.01em] text-[#ffffff] mt-2">For software, web development, networking, programming, etc.</p>
 
-export default function App() {
-  return (
-    <>
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        freeMode={true}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[FreeMode, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
-    </>
-  );
+            </div>
+          </div>
+          </div>
+          <div>
+          <div className="w-full rounded-[35px] lg:h-[475px] flex py-3 items-end lg:w-[494px] h-full bg-no-repeat bg-cover " style={{ backgroundImage: `url(${card1})` }}>
+            <div className=" px-5 text-left mb-6">
+              <p className="text-[#ffffff] font-Bai-Jamjuree font-semibold text-[40px] leading-[44px]">IT Services</p>
+              <p className="flex font-Mulish font-medium text-[20px] leading-[28px] tracking-[-0.01em] text-[#ffffff] mt-2">For software, web development, networking, programming, etc.</p>
+
+            </div>
+          </div>
+          </div>
+        </Slider>
+      </div>
+    );
+  }
 }

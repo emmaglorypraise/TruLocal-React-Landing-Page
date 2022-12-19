@@ -1,10 +1,18 @@
 import img from "../assets/header-img.svg";
 import email from "../assets/email-icon.svg";
 import play from "../assets/play-icon.svg";
-
+import downArrow from "../assets/Grouplooparrow.svg";
+import Slider2 from "./slider2";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+const style = {
+  borderBottomLeftRadius:"50% 20%",
+  borderBottomRightRadius: "50% 20%",
+  backgroundImage: "#EEE4D7",
+}
 export default function Header() {
   return (
-    <div className="bg-[#EEEEEE]">
+    <div className="bg-[#EEEEEE] ">
       <div className="flex flex-col md:flex-row">
         <div className="max-w-[570px] lg:ml-[30px] mx-auto px-6 text-left text-[#222222]">
           <h1 className="lg:mt-[120px] mt-[60px] font-Bai-Jamjuree font-medium text-[46px] leading-[46px] tracking-[-0.03em]">Get <span className="text-[#E98100]">Plumbing</span> done on your own terms</h1>
@@ -38,6 +46,28 @@ export default function Header() {
 
         </div>
       </div>
+
+     
+
+      {/* <div>
+        <div className="flex flex-col md:flex-row py-[50px]" >
+          <div>
+            <img src={downArrow} alt="down arrow icon"/>
+          </div>
+          <div className="max-w-[570px] lg:ml-[30px] mx-auto px-6 text-left text-[#222222]">
+            <h1 className="lg:mt-[120px] mt-[60px] font-Bai-Jamjuree font-medium text-[48px] leading-[53px]">Explore by
+              Categories</h1>
+            <p className="font-Mulish font-normal text-[20px] lg:text-[20px] leading-[36px] tracking-[-0.02em] mt-[40px] lg:pr-[50px] pr-[10px]">Browse our categories and find the right talents that matches the job you want to get done.</p>
+            <button class="flex-shrink-0  bg-[#E98100] hover:bg-[#E98100] hover:border-[#E98100] text-medium font-Mulish text-white py-[10px] px-[25px] lg:py-[21px] lg:px-[35px] text-[18px] leading-[23px] rounded-[20px] mt-[20px]" type="button">
+              See all Categories
+            </button>
+
+          </div>
+          <div>
+            <Slider2/>
+          </div>
+        </div>
+      </div> */}
     </div>
   )
 }

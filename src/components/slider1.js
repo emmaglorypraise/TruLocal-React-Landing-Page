@@ -15,11 +15,11 @@ import star from "../assets/star.svg";
 
 import arrow from "../assets/arrow-right.svg";
 
-import card1 from "../assets/images/card1.svg"
+import card1 from "../assets/images/card1.svg";
 
-import card2 from "../assets/images/card2.svg"
+import card2 from "../assets/images/card2.svg";
 
-import card3 from "../assets/images/card3.svg"
+import card3 from "../assets/images/card3.svg";
 
 
 export default function Slider1() {
