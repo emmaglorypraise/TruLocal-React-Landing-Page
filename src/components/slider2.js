@@ -3,14 +3,26 @@ import Slider from "react-slick";
 
 import card1 from "../assets/images/sliderp2.svg";
 
+// const style = {
+//   .slickSlide.slickCenter img {
+//     transform: scale(1.1);
+// }
+// }
 export default class Slider2 extends Component {
   render() {
     const settings = {
       centerMode: true,
       infinite: true,
+      draggable: true,
+      slidesToScroll: 1,
+      dots: true,
+      centerPadding: 30,
       centerPadding: "100px",
       slidesToShow: 1,
-      speed: 500,
+
+    cssEase: 'linear',
+    variableWidth: true,
+    variableHeight: true
       // responsive: [
       //   {
       //     breakpoint: 768,

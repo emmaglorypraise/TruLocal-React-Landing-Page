@@ -16,7 +16,7 @@ export default function Header() {
       <div className="flex flex-col md:flex-row">
         <div className="max-w-[570px] lg:ml-[30px] mx-auto px-6 text-left text-[#222222]">
           <h1 className="lg:mt-[120px] mt-[60px] font-Bai-Jamjuree font-medium text-[46px] leading-[46px] tracking-[-0.03em]">Get <span className="text-[#E98100]">Plumbing</span> done on your own terms</h1>
-          <p className="font-Poppins font-normal text-[18px] lg:text-[20px] leading-[36px] tracking-[-0.02em]  mt-[20px] lg:pr-[50px] pr-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui convallis fusce nulla tincidunt sem iaculis. Amet velit etiam nisi.</p>
+          <p className="font-Poppins font-normal text-[18px] lg:text-[20px] leading-[36px] tracking-[-0.02em]  mt-[20px] lg:pr-[50px] pr-[10px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui convallis fusce nulla tincidunt sem iaculis.</p>
           <form class=" w-full my-[20px] shadow-[0px 30px 30px rgba(131, 9, 0, 0.05)] max-w-lg">
             <div class="flex items-center font-Poppins lg:text-[18px] text-[12px] leading-[27px] bg-white p-3 rounded-[25px] mt-[30px] py-2">
               <img className="p-1 lg:p-4" src={email} alt="email icon" />
@@ -49,7 +49,7 @@ export default function Header() {
 
      
 
-      {/* <div>
+      <div>
         <div className="flex flex-col md:flex-row py-[50px]" >
           <div>
             <img src={downArrow} alt="down arrow icon"/>
@@ -67,7 +67,7 @@ export default function Header() {
             <Slider2/>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   )
 }
